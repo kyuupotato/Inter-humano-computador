@@ -1,0 +1,65 @@
+:root {
+  --fundo-claro: #ffffff;
+  --texto-claro: #000000;
+  --fundo-escuro: #121212;
+  --texto-escuro: #f1f1f1;
+  --fundo-destaque: #007bff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  background-color: var(--fundo-claro);
+  color: var(--texto-claro);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: var(--fundo-escuro);
+  color: var(--texto-escuro);
+}
+
+header {
+  background-color: var(--fundo-destaque);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+#toggle-theme {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✅ ";
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+}
+
+body.dark footer {
+  background-color: #222;
+}
